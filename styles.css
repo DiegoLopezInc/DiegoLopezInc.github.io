@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #30D5C8;
+  --background-color: #00001a;
+  --text-color: white;
+  --project-bg-color: rgba(255, 255, 255, 0.1);
+  --main-font: "Roboto Slab", serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+p {
+    background-color: var(--project-bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+#waveContainer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+h1, h2 {
+    color: var(--primary-color);
+}
+
+section {
+    
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 600px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+ul li {
+    background-color: var(--project-bg-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+#contact {
+    background-color: var(--project-bg-color);
+    border-radius: 50px;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    width: 100%;
+    max-width: 300px;
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.2);
+}
+
+.contact-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-color);
+}
